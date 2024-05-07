@@ -51,7 +51,8 @@ export default function Home() {
         // </div>
         <Room
           key={room.pk}
-          pk={room.pk}          
+          pk={room.pk}
+          isOwner={room.is_owner}                    
           imageUrl={room.photos[0]?.file}
           name={room.name}
           rating={room.rating}
